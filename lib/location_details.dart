@@ -17,13 +17,13 @@ class _LocationDetailsState extends State<LocationDetails> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          TextSection(color: Color(0xffd9d9d9),),
-          TextSection(color: Color.fromARGB(255, 207, 10, 10),),
-          TextSection(color: Color.fromARGB(255, 159, 3, 3),),
-          TextSection(color: Color.fromARGB(255, 10, 35, 136),),
+          Image.asset("assets/images/to.jpg"),
+          TextSection(color: Color(0xffd9d9d9)),
+          TextSection(color: Color.fromARGB(255, 207, 10, 10)),
+          TextSection(color: Color.fromARGB(255, 159, 3, 3)),
+          TextSection(color: Color.fromARGB(255, 10, 35, 136)),
         ],
       ),
     );
   }
 }
-
