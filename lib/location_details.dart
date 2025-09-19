@@ -18,7 +18,7 @@ class _LocationDetailsState extends State<LocationDetails> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const ImageBanner(imagePath: "assets/images/to.jpg"),
+          const ImageBanner(imagePath: "assets/to.jpg"),
           const TextSection(color: Color(0xffd9d9d9)),
           const TextSection(color: Color.fromARGB(255, 207, 10, 10)),
           const TextSection(color: Color.fromARGB(255, 159, 3, 3)),
