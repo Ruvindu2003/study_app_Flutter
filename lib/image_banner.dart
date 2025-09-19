@@ -15,6 +15,10 @@ class _ImageBannerState extends State<ImageBanner> {
     return Container(
       decoration: const BoxDecoration(color: Colors.grey),
       child: Image.asset(widget.imagePath, fit: BoxFit.cover),
+      height: 240,
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 16.0),
+      //
     );
   }
 }
