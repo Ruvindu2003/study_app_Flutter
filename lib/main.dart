@@ -10,22 +10,38 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Home')),
+    return MaterialApp(
+      title: 'Study App',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const MyHomePage(),
+    );
+  }
+}
 
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Home')),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
-            decoration: BoxDecoration(color: Colors.red),
-            child: Text('Hi'),
+            decoration: const BoxDecoration(color: Colors.red),
+            child: const Text('Hi'),
           ),
           Container(
-            decoration: BoxDecoration(color: Colors.blue),
-            child: Text('Hi'),
+            decoration: const BoxDecoration(color: Colors.blue),
+            child: const Text('Hi'),
           ),
           Container(
-            decoration: BoxDecoration(color: Colors.white),
-            child: Text('Hi'),
+            decoration: const BoxDecoration(color: Colors.white),
+            child: const Text('Hi'),
           ),
         ],
       ),
